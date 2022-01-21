@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var gameNameLabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        gameNameLabel.adjustsFontSizeToFitWidth = true
     }
 
-
+    @IBAction func startNewGameButton() {
+    }
+    
+    
 }
 
