@@ -9,4 +9,8 @@ import Foundation
 
 protocol GameViewModelType {
     var chosenNumber: String {get}
+    var roundNumber: String {get}
+    var guesser: Guesser {get}
+    
+    
 }

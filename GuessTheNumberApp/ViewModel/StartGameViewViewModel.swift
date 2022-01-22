@@ -9,13 +9,7 @@ import Foundation
 
 class StartGameViewViewModel: StartGameViewModelType {
   
-//    var puzzledNumber: PuzzledNumber {
-//        return PuzzledNumber(puzzledNumber: 5)
-//    }
     var chosenNumber: Box<String?> = Box(nil)
-    
-    
-    
     
     var selectedNumber: String {
         return chosenNumber.value ?? "Not Found"

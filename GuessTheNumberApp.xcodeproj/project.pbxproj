@@ -15,6 +15,9 @@
 		9A3B1D6B279B20FF00F80666 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B1D6A279B20FF00F80666 /* GameViewController.swift */; };
 		9A3B1D6D279B29ED00F80666 /* GameViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B1D6C279B29EC00F80666 /* GameViewModelType.swift */; };
 		9A3B1D6F279B2B7900F80666 /* GameViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B1D6E279B2B7900F80666 /* GameViewViewModel.swift */; };
+		9A3B1D71279BDB7500F80666 /* PlayerGuesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B1D70279BDB7500F80666 /* PlayerGuesser.swift */; };
+		9A3B1D73279BEE1400F80666 /* ComputerGuesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B1D72279BEE1400F80666 /* ComputerGuesser.swift */; };
+		9A3B1D75279BEEBB00F80666 /* Guesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B1D74279BEEBB00F80666 /* Guesser.swift */; };
 		9A976719279A7B9F00B990D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A976718279A7B9F00B990D2 /* AppDelegate.swift */; };
 		9A97671B279A7B9F00B990D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A97671A279A7B9F00B990D2 /* SceneDelegate.swift */; };
 		9A97671D279A7B9F00B990D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A97671C279A7B9F00B990D2 /* ViewController.swift */; };
@@ -32,6 +35,9 @@
 		9A3B1D6A279B20FF00F80666 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9A3B1D6C279B29EC00F80666 /* GameViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelType.swift; sourceTree = "<group>"; };
 		9A3B1D6E279B2B7900F80666 /* GameViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewViewModel.swift; sourceTree = "<group>"; };
+		9A3B1D70279BDB7500F80666 /* PlayerGuesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGuesser.swift; sourceTree = "<group>"; };
+		9A3B1D72279BEE1400F80666 /* ComputerGuesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuesser.swift; sourceTree = "<group>"; };
+		9A3B1D74279BEEBB00F80666 /* Guesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guesser.swift; sourceTree = "<group>"; };
 		9A976715279A7B9F00B990D2 /* GuessTheNumberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheNumberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A976718279A7B9F00B990D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A97671A279A7B9F00B990D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +62,9 @@
 		9A3B1D5E279AD99F00F80666 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9A3B1D74279BEEBB00F80666 /* Guesser.swift */,
+				9A3B1D72279BEE1400F80666 /* ComputerGuesser.swift */,
+				9A3B1D70279BDB7500F80666 /* PlayerGuesser.swift */,
 				9A3B1D5C279AD97600F80666 /* PuzzledNumber.swift */,
 			);
 			path = Model;
@@ -196,6 +205,7 @@
 			files = (
 				9A3B1D68279B1B7200F80666 /* StartGameViewModelType.swift in Sources */,
 				9A3B1D5D279AD97600F80666 /* PuzzledNumber.swift in Sources */,
+				9A3B1D75279BEEBB00F80666 /* Guesser.swift in Sources */,
 				9A3B1D66279B0B1800F80666 /* Box.swift in Sources */,
 				9A97671D279A7B9F00B990D2 /* ViewController.swift in Sources */,
 				9A3B1D6B279B20FF00F80666 /* GameViewController.swift in Sources */,
@@ -203,7 +213,9 @@
 				9A3B1D63279AF87A00F80666 /* StartGameViewViewModel.swift in Sources */,
 				9A976719279A7B9F00B990D2 /* AppDelegate.swift in Sources */,
 				9A3B1D61279AF29900F80666 /* StartGameViewController.swift in Sources */,
+				9A3B1D71279BDB7500F80666 /* PlayerGuesser.swift in Sources */,
 				9A3B1D6D279B29ED00F80666 /* GameViewModelType.swift in Sources */,
+				9A3B1D73279BEE1400F80666 /* ComputerGuesser.swift in Sources */,
 				9A97671B279A7B9F00B990D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

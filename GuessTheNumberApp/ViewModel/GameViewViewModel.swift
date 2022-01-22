@@ -6,12 +6,19 @@
 //
 
 import Foundation
+
 class GameViewViewModel: GameViewModelType {
+    
+    var guesser: Guesser
+    
+    var roundNumber: String
     
     var chosenNumber: String
     
     init(chosenNumber: String) {
         self.chosenNumber = chosenNumber
     }
+    
+    
     
 }

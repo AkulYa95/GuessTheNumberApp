@@ -12,10 +12,7 @@ class StartGameViewController: UIViewController {
     @IBOutlet var roundLabel: UILabel!
     @IBOutlet var selectedNumberTF: UITextField!
     
-    var viewModel: StartGameViewModelType? {
-        didSet {
-        }
-    }
+    var viewModel: StartGameViewModelType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +22,17 @@ class StartGameViewController: UIViewController {
     }
     
     @IBAction func selectedNumberButtonPressed() {
-        viewModel?.chosenNumber.bind { [unowned self] in
-            guard let number = $0 else {return}
-            self.roundLabel.text = number
+        if checkString(onInt: selectedNumberTF.text) == true {
+            viewModel?.chosenNumber.bind { [unowned self] in
+                guard let number = $0 else {return}
+                self.roundLabel.text = number
         }
         self.viewModel?.chosenNumber.value = selectedNumberTF.text
         
         performSegue(withIdentifier: "gameSegue", sender: nil)
-
+        } else {
+            createAlertController(with: "Invalid data", message: "Please insert Integer")
+        }
     }
     
     
@@ -79,10 +79,12 @@ extension StartGameViewController {
     func createAlertController(with title:String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
-        
+        self.present(alert, animated: true, completion: nil)
     }
     
-    func checkText(_ text: String) {
+    func checkString(onInt text: String?) -> Bool {
+        guard let text = text, let _ = Int(text) else {return false}
         
+        return true
     }
 }

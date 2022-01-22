@@ -8,6 +8,7 @@
 import Foundation
 
 protocol StartGameViewModelType {
+    
     var chosenNumber: Box<String?> {get}
     
     func viewModelForGame() -> GameViewModelType?
