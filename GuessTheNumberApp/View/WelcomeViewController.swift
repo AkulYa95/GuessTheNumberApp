@@ -7,20 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
     
     @IBOutlet var gameNameLabel: UILabel!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         gameNameLabel.adjustsFontSizeToFitWidth = true
     }
-
-    @IBAction func startNewGameButton() {
-    }
-    
-    
+        
 }
 

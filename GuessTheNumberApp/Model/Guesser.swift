@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Guesser {
-    case computer
-    case player
+enum Guesser: String {
+    case computer = "Computer"
+    case player = "Player"
 }
